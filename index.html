@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aux</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles/tokens.css" />
+    <link rel="stylesheet" href="src/styles/auth.css" />
+  </head>
+  <body>
+    <main class="onboarding-shell">
+      <header class="brand-block">
+        <img class="logo" src="assets/aux-logo.svg" alt="Aux logo" />
+      </header>
+
+      <section class="content-card" aria-labelledby="new-in-aux-title">
+        <h1 id="new-in-aux-title">New in aux</h1>
+
+        <ul class="feature-list">
+          <li>Seamlessly connect and sync music across all your devices.</li>
+          <li>Your personalized music universe, accessible anywhere.</li>
+          <li>Join true, real-time shared listening rooms for connecting with friends.</li>
+          <li>Experience smoother connections and a whole new standard of audio discovery.</li>
+        </ul>
+      </section>
+
+      <section class="actions" aria-label="Auth actions">
+        <button class="cta cta-primary" type="button" id="getStartedButton">Get Started</button>
+        <button class="cta cta-secondary" type="button" id="loginButton">Log in</button>
+      </section>
+    </main>
+
+    <script type="module" src="src/scripts/auth.js"></script>
+  </body>
+</html>
