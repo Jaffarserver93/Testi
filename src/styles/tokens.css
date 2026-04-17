@@ -1,0 +1,21 @@
+:root {
+  --spotify-green: #1ed760;
+  --spotify-green-dark: #1db954;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --panel-bg: rgba(18, 18, 18, 0.95);
+  --input-bg: #121212;
+  --input-border: #727272;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top, #2b2b2b 0%, #121212 45%, #000 100%);
+  color: var(--text-primary);
+}
