@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Auth Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="auth-shell">
+      <section class="auth-card" aria-live="polite">
+        <div class="brand">
+          <div class="logo" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <p>Spotify</p>
+        </div>
+
+        <div id="signupView" class="view active">
+          <h1>Sign up to start listening</h1>
+          <form class="form-stack" id="signupForm">
+            <label>
+              Email address
+              <input type="email" placeholder="name@domain.com" required />
+            </label>
+            <label>
+              Password
+              <input type="password" placeholder="Create a password" minlength="8" required />
+            </label>
+            <label>
+              What should we call you?
+              <input type="text" placeholder="Display name" required />
+            </label>
+            <button class="primary" type="submit">Sign up</button>
+          </form>
+          <p class="meta">
+            Already have an account?
+            <button class="link" type="button" data-target="login">Log in</button>
+          </p>
+        </div>
+
+        <div id="loginView" class="view">
+          <h1>Log in to Spotify</h1>
+          <form class="form-stack" id="loginForm">
+            <label>
+              Email or username
+              <input type="text" placeholder="Email or username" required />
+            </label>
+            <label>
+              Password
+              <input type="password" placeholder="Password" required />
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" />
+              Remember me
+            </label>
+            <button class="primary" type="submit">Log in</button>
+          </form>
+          <p class="meta">
+            Don't have an account?
+            <button class="link" type="button" data-target="signup">Sign up for Spotify</button>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
