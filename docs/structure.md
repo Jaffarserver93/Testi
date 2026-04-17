@@ -1,14 +1,23 @@
-# Project Structure
+# Project structure
 
-This repo uses a scalable layout so UI flows can grow into a multi-purpose app:
+```text
+.
+├── docs/
+│   ├── preview.md      # How to run a local preview server
+│   └── structure.md    # Structure and conventions
+├── index.html          # App entry page
+├── scripts_preview.sh  # Local static preview server helper
+└── src/
+    ├── scripts/
+    │   └── auth.js     # Auth view interactions
+    └── styles/
+        ├── auth.css    # Auth feature styles
+        └── tokens.css  # Global design tokens + base styles
+```
 
-- `index.html`: Entry page and semantic auth markup.
-- `src/styles/tokens.css`: Shared design tokens/global styles.
-- `src/styles/auth.css`: Auth page-specific styles.
-- `src/scripts/auth.js`: Auth view state and form interaction logic.
-- `docs/structure.md`: Notes on codebase structure.
+## Conventions
 
-As additional app modules are built, follow the same pattern:
-
-- `src/styles/<feature>.css` for feature-level styling.
-- `src/scripts/<feature>.js` for feature-level behavior.
+- Keep feature scripts in `src/scripts`.
+- Keep reusable design values in `src/styles/tokens.css`.
+- Keep feature styles in dedicated CSS files (e.g., `auth.css`).
+- Keep docs in `docs/` and update them when structure changes.
