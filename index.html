@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotify Auth Clone</title>
+    <title>Aux Auth Clone</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,12 +17,8 @@
     <main class="auth-shell">
       <section class="auth-card" aria-live="polite">
         <header class="brand">
-          <div class="logo" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <p>Spotify</p>
+          <img class="logo" src="assets/aux-logo.svg" alt="Aux logo" />
+          <p>Aux</p>
         </header>
 
         <section id="signupView" class="view active" data-view="signup">
@@ -55,7 +51,7 @@
         </section>
 
         <section id="loginView" class="view" data-view="login">
-          <h1>Log in to Spotify</h1>
+          <h1>Log in to Aux</h1>
           <form class="form-stack" id="loginForm" novalidate>
             <label>
               Email or username
@@ -73,7 +69,7 @@
           </form>
           <p class="meta">
             Don't have an account?
-            <button class="link" type="button" data-target="signup">Sign up for Spotify</button>
+            <button class="link" type="button" data-target="signup">Sign up for Aux</button>
           </p>
         </section>
       </section>

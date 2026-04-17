@@ -30,7 +30,7 @@ function wireFormActions() {
 
   formElements.login.addEventListener('submit', (event) => {
     event.preventDefault();
-    alert('Logged in! This is a UI clone for app flow design.');
+    alert('Logged in! This is an Aux UI clone for app flow design.');
   });
 }
 

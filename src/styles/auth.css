@@ -30,28 +30,7 @@
 .logo {
   width: 34px;
   height: 34px;
-  border-radius: 50%;
-  background: var(--spotify-green);
-  display: grid;
-  place-content: center;
-  gap: 4px;
-  padding: 6px 7px;
-}
-
-.logo span {
-  display: block;
-  height: 2px;
-  width: 100%;
-  border-radius: 999px;
-  background: #111;
-}
-
-.logo span:nth-child(2) {
-  width: 85%;
-}
-
-.logo span:nth-child(3) {
-  width: 70%;
+  object-fit: contain;
 }
 
 .view {
